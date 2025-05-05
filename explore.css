@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Open+Sans:ital,wght@1,300&display=swap');
+:root{
+    --orange:#ffa500;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Nunito', sans-serif;
+    outline:none;
+    border:none;
+    text-decoration:none;
+    transition: all 0.2s linear;
+}
+*::selection{
+    background:#ffa500;
+    color:#fff;
+}
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+    scroll-padding-top:6rem;
+    scroll-behavior: smooth;
+}
+.image{
+    background-image:url("nepaal.png");
+    background-size:cover;
+    height:50px;
+    Width:40px;
+    margin-bottom:5px;
+}
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    background:white;
+    height:60px;
+    width:100%;
+    font-size:1.5rem; 
+    z-index:1000;
+    padding :2rem 9%;
+    margin-bottom: 5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#menu-bar{
+    color:rgb(6, 6, 79);
+    border:0.1rem solid rgb(6, 6, 79);
+    border-radius:0.5rem;
+    font-size:3rem;
+    padding:0.5rem 1.2rem;
+    cursor:pointer;
+    display:none;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    margin-left:30px;
+}
+.logo a{
+   font-size:2.5rem;
+   font-weight:bolder;
+   text-transform:uppercase;
+}
+.header .nav a{
+    color:#000000;
+    padding:0px 20px;
+}
+.header .nav a:hover{
+    color:#ffa500;
+    text-decoration: underline;
+}
+.header .nav .nepal{
+    font-size:3rem;
+    text-shadow:0 0.3rem 0.5rem rgba(0,0,0,0.1);
+    text-transform:uppercase;
+}
+section{
+    padding:2rem 9%;
+}
+.head{
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow:column;
+    position:relative;
+    z-index:0;
+}
+.head .content{
+    text-align:center;
+}
+.head .content h3{
+    font-size:8rem;
+    color:rgb(237, 237, 241);
+    text-transform:uppercase;
+    text-shadow:0 0.3rem 0.5rem rgba(0,0,0,0.1);
+}
+.head .content p{
+    font-size:2rem;
+    color:whitesmoke;
+    padding:0.5rem 0;
+}
+.head .videobox video{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    object-fit: cover;
+}
+.headings{
+    text-align:center;
+    padding:2.5rem 0;
+}
+.headings span{
+    font-size:3.5rem;
+    background:rgba(255,165,0,0.2);
+    color:var(--orange);
+    border-radius:0.5rem;
+    padding:0.2rem 1rem;
+}
+.headings span .space{
+    background:none;
+}
+.places .contain{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.places .contain .box{
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.1);
+    border:1rem solid #ffffff;
+    border-radius:0.5rem; 
+    flex:1 1 35rem;
+    height:25rem;
+    position:relative;
+}
+.places .contain img{
+    height:90%;
+    width:100%;
+    object-fit:cover;
+}
+.places .contain .box h3{
+   font-size:1.7rem;
+}
+.places h2{
+    font-size:2rem;
+ }
+ .places .contain .sudur{
+    width:33%;
+ }
+ .things .contain{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.things .contain .box{
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.1);
+    border:1rem solid #ffffff;
+    border-radius:0.5rem; 
+    flex:1 1 35rem;
+    height:25rem;
+    position:relative;
+}
+.things .contain img{
+    height:90%;
+    width:100%;
+    object-fit:cover;
+}
+.things .contain .box h3{
+   font-size:1.7rem;
+}
+.things h2{
+    font-size:2rem;
+    margin:17px 0 5px;
+ }
+ .festivals .contain{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.festivals .contain .box{
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.1);
+    border:1rem solid #ffffff;
+    border-radius:0.5rem; 
+    flex:1 1 35rem;
+    height:25rem;
+    position:relative;
+}
+.festivals .contain img{
+    height:90%;
+    width:100%;
+    object-fit:cover;
+}
+.festivals .contain .box h3{
+   font-size:1.7rem;
+}
+.festivals h2{
+    font-size:2rem;
+    margin:17px 0 5px;
+ }
+ /*koshi Province*/
+ .koshi .contain{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.koshi .contain .box{
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.1);
+    border:1rem solid #ffffff;
+    border-radius:0.5rem; 
+    flex:1 1 45rem;
+    position:relative;
+}
+.koshi .contain img{
+    height:35rem;
+    width:100%;
+    object-fit:cover;
+}
+.koshi .contain .box h3{
+   font-size:1.7rem;
+}
+.koshi .contain .box p{
+    font-size:1.4rem;
+ }
+.koshi h2{
+    font-size:2rem;
+ }
+ .koshi p{
+    font-size:1.7rem;
+ }
+ /*maadesh pradesh*/
+ .maadesh .contain{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.maadesh .contain .box{
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.1);
+    border:1rem solid #ffffff;
+    border-radius:0.5rem; 
+    flex:1 1 45rem;
+    position:relative;
+}
+.maadesh .contain img{
+    height:35rem;
+    width:100%;
+    object-fit:cover;
+}
+.maadesh .contain .box h3{
+   font-size:1.7rem;
+}
+.maadesh .contain .box p{
+    font-size:1.4rem;
+ }
+.maadesh h2{
+    font-size:2rem;
+ }
+ .maadesh p{
+    font-size:1.7rem;
+ }
+ /*Bagmati*/
+ .bagmati .contain{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.bagmati .contain .box{
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.1);
+    border:1rem solid #ffffff;
+    border-radius:0.5rem; 
+    flex:1 1 45rem;
+    position:relative;
+}
+.bagmati .contain img{
+    height:35rem;
+    width:100%;
+    object-fit:cover;
+}
+.bagmati .contain .box h3{
+   font-size:1.7rem;
+}
+.bagmati.contain .box p{
+    font-size:1.4rem;
+ }
+.bagmati h2{
+    font-size:2rem;
+ }
+ .bagmati p{
+    font-size:1.7rem;
+ }
+ /*Gandaki*/
+ .gandaki .contain{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.gandaki .contain .box{
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.1);
+    border:1rem solid #ffffff;
+    border-radius:0.5rem; 
+    flex:1 1 45rem;
+    position:relative;
+}
+.gandaki .contain img{
+    height:35rem;
+    width:100%;
+    object-fit:cover;
+}
+.gandaki .contain .box h3{
+   font-size:1.7rem;
+}
+.gandaki .contain .box p{
+    font-size:1.4rem;
+ }
+.gandaki h2{
+    font-size:2rem;
+ }
+ .gandaki p{
+    font-size:1.7rem;
+ }
+ /*Lumbini*/
+ .lumbini .contain{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.lumbini .contain .box{
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.1);
+    border:1rem solid #ffffff;
+    border-radius:0.5rem; 
+    flex:1 1 45rem;
+    position:relative;
+}
+.lumbini .contain img{
+    height:35rem;
+    width:100%;
+    object-fit:cover;
+}
+.lumbini .contain .box h3{
+   font-size:1.7rem;
+}
+.lumbini .contain .box p{
+    font-size:1.4rem;
+ }
+.lumbini h2{
+    font-size:2rem;
+ }
+ .lumbini p{
+    font-size:1.7rem;
+ }
+ /*karnali*/
+ .karnali .contain{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.karnali .contain .box{
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.1);
+    border:1rem solid #ffffff;
+    border-radius:0.5rem; 
+    flex:1 1 45rem;
+    position:relative;
+}
+.karnali .contain img{
+    height:35rem;
+    width:100%;
+    object-fit:cover;
+}
+.karnali .contain .box h3{
+   font-size:1.7rem;
+}
+.karnali .contain .box p{
+    font-size:1.4rem;
+ }
+.karnali h2{
+    font-size:2rem;
+ }
+ .karnali p{
+    font-size:1.7rem;
+ }
+ /* Sudur Paschim*/
+ .sudur .contain{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.sudur .contain .box{
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.1);
+    border:1rem solid #ffffff;
+    border-radius:0.5rem; 
+    flex:1 1 45rem;
+    position:relative;
+}
+.sudur .contain img{
+    height:35rem;
+    width:100%;
+    object-fit:cover;
+}
+.sudur .contain .box h3{
+   font-size:1.7rem;
+}
+.sudur .contain .box p{
+    font-size:1.4rem;
+ }
+.sudur h2{
+    font-size:2rem;
+ }
+ .sudur p{
+    font-size:1.7rem;
+ }
+
+ body{
+    height:100rem;
+}
+/*media queries*/
+@media  (max-width:1200px){
+    html{
+        font-size:50%;
+    }
+    
+}
+@media  (min-width:991)and(max-width:1100px){
+    html{
+        font-size:48%;
+    }
+    .icons{
+        font-size:48%;
+    }
+}
+
+@media  (max-width:991px){
+    html{
+        font-size:45%;
+    }
+    .icons{
+        font-size:45%;
+    }
+    header{
+        padding:1.5rem;
+    }
+    section{
+        padding:1.5rem;
+    }
+}
+@media  (max-width:768px){
+    html{
+        font-size:43%;
+    }
+    #menu-bar{
+        display:initial;
+    }
+    header .nav{
+        position:absolute;
+        top:100%;
+        right:0;
+        left:0;
+        background:whitesmoke;
+        border-top:0.1rem solid rgba(255,255,255,0.2);
+        padding:1rem 2rem;
+        clip-path:polygon(0 0, 100% 0,100% 0, 0 0);
+
+    }
+    header .nav.active{
+        clip-path:polygon(0 0, 100% 0,100% 100%, 0 100%);
+    }
+    header .nav a{
+        display:block;
+        border-radius:0.5rem;
+        padding:1.5rem;
+        margin:1.5rem 0;
+        background:whitesmoke;
+    }
+}
+@media  (max-width:450px){
+    html{
+        font-size:40%;
+    }
+    .headings span{
+        font-size:2rem;
+    }
+    .places .contain .sudur{
+        width:100%;
+     }
+}
+@media  (max-width:300px){
+    html{
+        font-size:35%;
+    }
+    .headings span{
+        font-size:2rem;
+    }
+    .icons{
+        font-size:35%;
+    }
+    .sudur .box {
+        width:100%;
+    }
+}
+ 

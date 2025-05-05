@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="tourism.css">
+</head>
+<body>
+    <header>
+     <div class="header">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <div class="logo">
+            <div class="image"></div>
+        <a href="#">Blissful Journeys</a>
+        </div>
+        <nav class="navigationbar">
+            <div class="nav">
+                <a href="tourism.html">Home</a>
+                <a href="gallery.html" >Gallery</a>
+                <a href="packages.html">Packages</a>
+                <a href="services.html">Services</a>
+                <a href="booking.html">Booking</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </div>
+         </nav>  
+    <div class="icons">
+        <i class="fas fa-user" id="user-button" ></i>
+        <i class="fa-solid fa-cart-shopping" id="cart"></i>
+        <i class="fas fa-search" id="search-button"></i>
+    </div>
+      <form action="">   
+        <div class="search-form">
+        <input type="search" id="search-bar" placeholder="Search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+        </div>
+    </form>
+</div>
+</header>
+    <div class="login-form">  
+        <form action=""> 
+        <div class="user-form">
+            <i class="fas fa-times" id="form"></i>
+        <h3>Login</h3>
+        <p>Login using email and password</p>
+        </div>
+        <div class="user-form-main">
+        <label for="email">Email</label> 
+        <input type="email" name="email" class="boxshape" placeholder="Enter your email" required>
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" class="boxshape" placeholder="Enter your password" required>
+        
+        <input type="checkbox" id="remember_me">
+        <label for="remember_me">Remember me?</label>
+        
+        <input type="submit" value="Login" class="button">
+        <p class="forget">Forget password?<a href=#> Click here!</a></p>
+        <p class="register">Don't have an account?<a href=#> Register Now!</a></p>
+        </div>
+    </form>
+ </div>
+ <section class="contact" id="contact">
+    <h1 class="headings">
+        <span>C</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>U</span>
+        <span>s</span>
+    </h1>
+    <div class="row">
+        <div class="imagee">
+            <img src="contact.jpg"alt="">
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <a href="https://mail.google.com/" target="_blank">Email: info@blissfuljourneys.com</a>
+            <p>Phone: +977-9813868702</p>
+            <p>Address: Patandhoka, Lalitpur, Nepal</p>
+            <h2>You can also contact us on:</h2>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+              <a href="https://www.instagram.com/"target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+               <a href="https://www.twitter.com/"target="_blank"> <i class="fa-brands fa-x-twitter"></i>Twitter</a>
+        </div>
+        </div>
+        <div class="row1">
+            <h2>Send us message</h2>
+        <form action="" onsubmit="sendmessage(event)">
+            <div class="row1">
+            <div class="inputBox">
+                <h2>Full Name</h2>
+                <input type="Text" placeholder="Enter your name"id="fullname" name="fullname" required>
+                </div>
+                <div class="inputBox">
+                <h2>Email</h2>
+                <input type="email" placeholder="Enter your e-mail"id="email" name="email" required>
+            </div>
+                <div class="inputBox">
+                    <h2>Phone Number</h2>
+                    <input type="text" placeholder="Enter your phone number" id="phonenumber" name="phonenumber" required>
+                    </div>
+                    <div class="inputBox">
+                        <h2>Subject</h2>
+                    <input type="Text" placeholder="Subject" id="subject" name="subject">
+                    </div>
+                    <div class="inputBox">
+                        <h2>Message</h2>
+            <textarea placeholder="Message" name="Message" rows="4" id="message" name="message" required></textarea>
+            </div>
+            <input type="submit" class="button" value="Send message">
+        </form>
+    </div>
+    </section>
+    <hr>
+<!-- footer section -->
+    <footer>
+        <div class="footer1">
+            <ul>
+                <p>For any Queries</p>
+                <a href="https://mail.google.com/" target="_blank">Email:blissfuljourneys@gmail.com</a>
+                <a>Address:Patandhoka, Lalitpur, Nepal</a>
+                <p>Dial us at</p>
+                <a>Phone:9813868702</a>
+                <a>Phone:9863483274</a>
+                <a>Phone: 9816075557</a>
+            </ul>
+            <ul>
+            <p>Find Us On</p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+              <a href="https://www.instagram.com/"target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+               <a href="https://www.twitter.com/"target="_blank"> <i class="fa-brands fa-x-twitter"></i>Twitter</a>
+               <a href="https://youtube.com/"target="_blank"> <i class="fa-brands fa-youtube"></i>Youtube</a>
+               </ul>
+               <ul>
+                <p>Quick Links </p>
+                <a href="tourism.html">Home</a>
+                  <a href="gallery.html">Gallery</a>
+                   <a href="packages.html">Packages</a>
+                   <a href="services.html">Services</a>
+                   <a href="booking.html">Booking</a>
+                   <a href="reviews.html">Reviews</a>
+                   <a href="contact.html">Contact Us</a>
+                   </ul>
+                   <ul>
+                   <p>Let Us Help You</p>
+                        <a href="tourism.html">Your Account</a>
+                        <a href ="tourism.html">Your Bookings</a>
+                       <a href="tourism.html"> Help</a>
+                       <a href="about.html">About</a>
+                       </ul>
+             </div>
+             
+            <div class="foot-panel2">
+                <div class="logo">
+                    <div class="image"></div>
+                <a href="#">Blissful Journeys</a>
+                </div>
+                </div>
+        
+            <div class="foot-panel3">
+            <div class="copyright">&copy;2024 Created by Section A,Group B; Members: Suprabha Aryal, Sofiya Adhikari, Prajuna Chalise | All rights reserved</div>
+</div>
+            
+
+     </footer>
+
+<script src="tourism.js"></script>
+
+</body>
+</html>
